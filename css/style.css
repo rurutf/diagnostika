@@ -376,14 +376,11 @@ button {
 
 .tab-wrap {
     position: relative;
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 25px;
 }
 .tab {
     width: 100%;
     position: absolute;
-    display: flex;
+    z-index: 4;
 }
 .tab__link {
     width: 230px;
