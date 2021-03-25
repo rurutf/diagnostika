@@ -409,46 +409,72 @@ button {
 
 }
 
+.rollup {
+
+}
+
+.rollup:after, .rollup:before {
+    content: "v";
+}
+
 .map {
     position: relative;
     z-index: 1;
 }
 
 /*Services-inspection.html*/
-
-.accordeon {
-    width: 100%;
-    transition: 0.4s;
-    cursor: pointer;
-    margin-bottom: 15px;
-    border-radius: 3px;
-    background-color: #848484;
-    text-align: left;
-    outline: none;
+.accordion {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
 }
 
-.active, .accordeon:hover {
-    background-color: #ccc;
+.accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    color: #1b62b4;
+    font-weight: 700;
+}
+
+.accordion__main p {
+    color: #000000;
+    font-weight: 700;
+}
+
+.accordion:hover {
+    /*background-color: #ccc;*/
     transition: background-color .3s ease-in-out;
 }
 
-.accordeon:after {
-    content: '\02795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+.arrow {
+    width: 3px;
+    border: solid rgba(0,0,0,.22);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px
 }
 
-.active:after {
-    content: "\2796";
+.toogle {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
-.accordeon__main {
+.active > .toogle {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.accordion__main {
     overflow: hidden;
     display: none;
-    padding: 15px;
-    max-height: 0;
+    padding: 15px 15px 0;
     transition: max-height 0.2s ease-out;
     color: #4a90e2;
 }

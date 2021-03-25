@@ -241,43 +241,42 @@
             <div class="container">
                 <h2 class="subtitle">Контакты</h2>
                 <div class="contact-tab">
-                    <div class="tab">
-                        <button class="tab__link" onclick="openCity(event, 'Yuzhno-Sakhalinsk')">Южно-Сахалинск</button>
-                        <button class="tab__link" onclick="openCity(event, 'Korsakov')">Корсаков</button>
-                        <button class="tab__link" onclick="openCity(event, 'Kholmsk')">Холмск</button>
-                        <div id="Yuzhno-Sakhalinsk" class="tab__content">
-                            <div>ООО «САДЦ»</div>
-                            <div>
-                                Адрес:
-                                <span>г. Южно-Сахалинск, ул. Железнодорожная, д. 180</span>
+                    <ul class="tab">
+                        <li class="tab__link" onclick="openCity(event, 'Yuzhno-Sakhalinsk')">Южно-Сахалинск</li>
+                        <li class="tab__link" onclick="openCity(event, 'Korsakov')">Корсаков</li>
+                        <li class="tab__link" onclick="openCity(event, 'Kholmsk')">Холмск</li>
+                    </ul>
+                        <div class="tab__content">
+                            <div class="tab__panel active" data-index="0">
+                                <div>ООО «САДЦ»</div>
+                                <div><span>Адрес:</span> г. Южно-Сахалинск, ул. Железнодорожная, д. 180</div>
+                                <div><span>Телефоны:</span> +7 (4242) 46-57-30<br>+7 (4242) 46-90-90</div>
+                                <div><span>Email:</span> cg-s@mail.ru</div>
+                                <div><span>Режим работы:</span> пн.-вс. с 9-00 до 18-00</div>
+                                <div class="rollup">Свернуть</div>
                             </div>
-                            <div>
-                                Телефоны:
-                                <span>
-                                    +7 (4242) 46-57-30<br>
-                                    +7 (4242) 46-90-90
-                                </span>
+                            <div class="tab__panel" data-index="1">
+                                <div>ООО «САДЦ»</div>
+                                <div><span>Адрес:</span> г. Южно-Сахалинск, ул. Железнодорожная, д. 180</div>
+                                <div><span>Телефоны:</span> +7 (4242) 46-57-30<br>+7 (4242) 46-90-90</div>
+                                <div><span>Email:</span> cg-s@mail.ru</div>
+                                <div><span>Режим работы:</span> пн.-вс. с 9-00 до 18-00</div>
+                                <div class="rollup">Свернуть</div>
                             </div>
-                            <div>
-                                Email:
-                                <span>
-                                    cg-s@mail.ru
-                                </span>
-                            </div>
-                            <div>
-                                Режим работы:
-                                <span>
-                                    пн.-вс. с 9-00 до 18-00
-                                </span>
-                            </div>
-                            <div class="btn--rollup">
-                                Свернуть
+                            <div class="tab__panel" data-index="2">
+                                <div>ООО «САДЦ»</div>
+                                <div><span>Адрес:</span> г. Южно-Сахалинск, ул. Железнодорожная, д. 180</div>
+                                <div><span>Телефоны:</span> +7 (4242) 46-57-30<br>+7 (4242) 46-90-90</div>
+                                <div><span>Email:</span> cg-s@mail.ru</div>
+                                <div><span>Режим работы:</span> пн.-вс. с 9-00 до 18-00</div>
+                                <div class="rollup">Свернуть</div>
                             </div>
                         </div>
-                    </div>
+
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37fd59901fd9a2a322b59e79c528a20b7abacebe73dc9ca2839cb65079ea0ee8&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
+                </div>
             </div>
         </section>
     </main>
